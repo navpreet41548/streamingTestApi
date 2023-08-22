@@ -45,6 +45,10 @@ const url =
 //   }
 // }
 
+app.get("/", async (req, res) => {
+  res.send("hello");
+});
+
 app.get("/stream-audio", async (req, res) => {
   const url =
     "https://api.elevenlabs.io/v1/text-to-speech/CYw3kZ02Hs0563khs1Fj/stream";
